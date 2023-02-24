@@ -1,23 +1,23 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&display=swap");
 
 /*layout*/
-:root{
+:root {
   --primary: rgb(118, 255, 255);
   --error: #e7195e;
 }
 
-body{
-  background-color: rgb(116, 137, 255);
+body {
+  background-image: url("../public/Meme.jpg");
+  background-size: cover;
+  background-position: top right;
+ 
   margin: 0;
   font-family: "Anek Latin";
 }
 
-header{
-  background-color: rgb(156, 156, 243);
-}
 
-header .container{
+header .container {
   max-width: 1500px;
   margin: 0 auto;
   padding: 10px 20px;
@@ -26,25 +26,25 @@ header .container{
   justify-content: space-between;
 }
 
-header a{
-  color: black;
+header a {
+  color: wheat;
   text-decoration: none;
 }
 
-.pages{
+.pages {
   max-width: 1500px;
   padding: 20px;
   margin: 0 auto;
 }
 
 /*homepage*/
-.home{
+.home {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
 
-.todo-details{
+.todo-details {
   background-color: aliceblue;
   border-radius: 4px;
   margin: 20px auto;
@@ -53,19 +53,19 @@ header a{
   box-shadow: 2px 2px 5px rgb(48, 46, 46);
 }
 
-.todo-details h4{
+.todo-details h4 {
   margin: 0 0 10px 0;
   font-size: 1.2em;
   color: #333;
 }
 
-.todo-details p{
+.todo-details p {
   margin: 0;
   font-size: 0.9em;
   color: #555;
 }
 
-.todo-details span{
+.todo-details span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -77,11 +77,12 @@ header a{
 }
 
 /*new todo form*/
-label, input{
+label,
+input {
   display: block;
-  }
+}
 
-input{
+input {
   padding: 15px;
   margin-top: 15px;
   margin-bottom: 25px;
@@ -90,7 +91,7 @@ input{
   border-radius: 5px;
   box-sizing: border-box;
 }
-form button{
+form button {
   background: var(--primary);
   border: 0;
   color: rgb(56, 56, 56);
@@ -100,7 +101,7 @@ form button{
   cursor: pointer;
 }
 
-div.error{
+div.error {
   padding: 15px;
   background: aliceblue;
   border: 1px solid var(--error);
@@ -109,21 +110,21 @@ div.error{
   margin: 25px 0;
 }
 
-input.error{
-  border: 2px solid var(--error)
+input.error {
+  border: 2px solid var(--error);
 }
 
 /*navbar*/
-nav{
+nav {
   display: flex;
   align-items: center;
 }
 
-nav a{
+nav a {
   margin: 15px;
 }
 
-nav button{
+nav button {
   background-color: antiquewhite;
   color: black;
   border: 2px solid var(--primary);
@@ -136,7 +137,8 @@ nav button{
 }
 
 /*auth forms*/
-form.signin, form.signup{
+form.signin,
+form.signup {
   max-width: 500px;
   margin: 45px auto;
   padding: 25px;
