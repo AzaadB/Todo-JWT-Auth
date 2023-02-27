@@ -32,7 +32,7 @@ const TodoForm = () => {
 
     const todo = { catagory, tasks, list };
 
-    const response = await fetch("http://localhost:9000/api/todos", {
+    const response = await fetch("https://todo-app-api-yvo5.onrender.com/", {
       //Creating a post request//
       method: "POST",
       body: JSON.stringify(todo),

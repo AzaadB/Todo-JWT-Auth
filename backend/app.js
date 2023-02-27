@@ -1,5 +1,7 @@
 const express = require("express");
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+//Importing the corsOptions function from the config folder and the corsOptions file(line 15)
 
 require("dotenv").config();
 
@@ -14,7 +16,7 @@ const mongoose = require("mongoose");
 
 //middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
